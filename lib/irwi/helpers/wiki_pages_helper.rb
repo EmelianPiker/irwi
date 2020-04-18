@@ -8,7 +8,8 @@ module Irwi::Helpers::WikiPagesHelper
   end
 
   def wiki_page_new_path
-    page = CGI.escape(params[:path]) if params && params[:path].present?
+    #page = CGI.escape(params[:path]) if params && params[:path].present?
+    page = params[:path] if params && params[:path].present?
     wiki_page_path(page, :new)
   end
 

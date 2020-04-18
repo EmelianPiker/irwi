@@ -38,7 +38,7 @@ module Irwi::Helpers::WikiPagesHelper
   def wiki_content(text)
     #sanitize(auto_link(Irwi.config.formatter.format(wiki_linkify(wiki_show_attachments(text))).html_safe))
     #auto_link(Irwi.config.formatter.format(wiki_linkify(wiki_show_attachments(text)))) + "KUKU"
-    Irwi.config.formatter.format(text) + "KUKU" + text
+    Irwi.config.formatter.format(text)
   end
 
   def wiki_diff(old_text, new_text)

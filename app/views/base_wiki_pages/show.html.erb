@@ -6,14 +6,6 @@
 <%= wiki_page_actions %>
   
 <div class="wiki_content">
-  <%=wiki_content @page.content %>
+  <%= raw (wiki_content @page.content) %>
 </div>
   
-<div class="wiki_content">
-  <%=@page.content %>
-</div>
-
-  
-<div class="wiki_content">
-  <%= raw "<div>1</div>" %>
-</div>
